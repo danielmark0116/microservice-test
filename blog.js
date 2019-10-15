@@ -5,6 +5,7 @@ const port = 9000;
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
+  console.log('blog app');
 });
 
 app.get('/api', (req, res) => {
